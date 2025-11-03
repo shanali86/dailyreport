@@ -149,6 +149,10 @@ app.post("/webhook", async (req, res) => {
   }
 });
 
+app.get('/test',(req,res)=>{
+  res.send("Server is running")
+})
+
 // ------------------- START SERVER ------------------- //
 app.listen(3002, async () => {
   console.log("🚀 Lark webhook listening on port 3002");
