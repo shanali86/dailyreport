@@ -150,8 +150,8 @@ app.post("/webhook", async (req, res) => {
 });
 
 // ------------------- START SERVER ------------------- //
-app.listen(3000, async () => {
-  console.log("🚀 Lark webhook listening on port 3000");
+app.listen(3002, async () => {
+  console.log("🚀 Lark webhook listening on port 3002");
   await refreshToken();
   setInterval(refreshToken, 60 * 60 * 1000); // refresh every hour
 
